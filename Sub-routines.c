@@ -1,9 +1,8 @@
 /*----------PROGRAM USING sUB-ROUTINES FOR MULTIPLICATION------------*/
 #include<stdio.h>
-    int mul(int a, int b); /*---------------DECLARATION--------------*/
+    int mul(int a, int b); /*------------FUNCTION DECLARATION--------*/
 /*------------------------MAIN PROGRAM BEGINS------------------------*/
-    int main()
-    {
+    int main(){
         int a,b,c;
         printf("Enter two numbers that are to be multiplied\t");
         scanf("%d %d",&a,&b);
@@ -13,11 +12,7 @@
     }
 /*------------------------MAIN PROGRAM ENDS---------------------------*/
 /*------------------------MUL FUNCTION STARTS-------------------------*/
-        int mul(int x, int y)
-        // int p;
-        {
-            int p;
-            p=x*y;
-            return(p);
+        int mul(int x, int y){
+            return(x*y);
         }
 /*-----------------------MUL() FUNCTION ENDS--------------------------*/
