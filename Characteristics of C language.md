@@ -1,4 +1,4 @@
-#Characteristics of C Language:
+Characteristics of C Language:
 1) Keywords
 2) Operators
 3) Seperator
