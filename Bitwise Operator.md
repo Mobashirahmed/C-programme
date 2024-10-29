@@ -55,4 +55,25 @@ void main(){
    printf("%d",c);
 }
 Now we'll look at Bitwise complementation (~):
+> Its a unary operator.
 > It refers to the flipping of bits 0-->1 and 1-->0 .
+Example Program [Bitwise COMPLEMENTATION]:
+  #include<stdio.h>
+  void main(){
+  int x = 5, y;
+  y = ~x;
+  /*
+  5--> 0000 0000 0000 0101
+  On taking its complement we get:
+       1111 1111 1111 1010
+> The computer encounters M.S.B as 1 ;hence considers it as negative value.
+> Now value is evaluated using 2's complement method:
+    i)Add the place values of '0'.
+    ii)Add 1 to it
+    iii)Place a minus sign before the obtained value. Hence you got your value.
+  */
+  /*
+  ~x = -(x+1) [Working of complementation operator]
+ */
+  printf("%d",y);
+  }
