@@ -54,3 +54,5 @@ void main(){
    */
    printf("%d",c);
 }
+Now we'll look at Bitwise complementation (~):
+> It refers to the flipping of bits 0-->1 and 1-->0 .
