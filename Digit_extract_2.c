@@ -1,6 +1,6 @@
 // Take Input a Random Number from the user and print the last second digit number
 #include<stdio.h>
-void main()
+int main()
 {
     int num1; // local var declaration
     printf("Enter a number\t");
@@ -11,5 +11,6 @@ void main()
     // printf("Your req. digit %d",num1);
     // num1=num1/10;
     // last second most digit dega
-    printf("\nYour req. digit %d",num1);
+    printf("\nSecond most digit is %d",num1);
+    return 0;
 }

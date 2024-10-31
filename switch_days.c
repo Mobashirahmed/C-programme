@@ -33,4 +33,5 @@
             default :
                 printf("Invalid Input ...");
         }
+        getch();
     }
