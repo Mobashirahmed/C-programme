@@ -16,12 +16,11 @@ int main(){
 
 
 
-
 int reverseNumber(int num){
     int reverse = 0;
     while(num != 0){
-        int last_gigit = num % 10;
-        reverse = reverse * 10 + last_gigit;
+        int last_digit = num % 10;
+        reverse = reverse * 10 + last_digit;
         num/=10;
     }
     return reverse;
