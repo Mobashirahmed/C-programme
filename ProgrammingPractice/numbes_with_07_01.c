@@ -16,6 +16,9 @@ int main(){
     int num1 = 1000;
     int num2 = 2000;
     printf("List of numbers in b/w 1k & 2k that ends with 7 and are also divisible by 7 are as follows:\n");
+    listValues(num1, num2);
+    // int lastDigit = extractDigit(num1);
+    // printf("%d",lastDigit);
 }
 
 int extractDigit(int num1){
@@ -23,7 +26,7 @@ int extractDigit(int num1){
 }
 
 bool checkDigit(int num1){
-    return num1%10 == 7;
+    return extractDigit(num1) == 7;
 }
 
 bool checkMultiple(int num1){
@@ -35,7 +38,7 @@ int count (int count){
 }
 
 void listValues(int num1, int num2){
-    for(num1=num1; num1<num1; ++num1){
+    for(num1; num1<num2; ++num1){
         if (checkDigit(num1) && checkMultiple(num1)){
             printf("\t%d\n",num1);
         }
