@@ -8,9 +8,9 @@ int extractDigit(int num1);
 bool checkDigit(int num1);
 bool checkMultiple(int num1);
 
-int count(int count);
-
 void listValues(int num1, int num2);
+
+int count=0; // global declaration of count variable
 
 int main(){
     int num1 = 1000;
@@ -33,14 +33,14 @@ bool checkMultiple(int num1){
     return num1%7 == 0;
 }
 
-int count (int count){
     
-}
 
 void listValues(int num1, int num2){
     for(num1; num1<num2; ++num1){
         if (checkDigit(num1) && checkMultiple(num1)){
+            count++;
             printf("\t%d\n",num1);
         }
     }
+    printf("Number of Multiples is %d",count);
 }
