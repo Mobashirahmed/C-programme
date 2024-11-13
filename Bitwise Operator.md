@@ -68,12 +68,81 @@ Example Program [Bitwise COMPLEMENTATION]:
        1111 1111 1111 1010
 > The computer encounters M.S.B as 1 ;hence considers it as negative value.
 > Now value is evaluated using 2's complement method:
-    i)Add the place values of '0'.
-    ii)Add 1 to it
-    iii)Place a minus sign before the obtained value. Hence you got your value.
+    i) Add the place values of '0'.
+    ii) Add 1 to it
+    iii) Place a minus sign before the obtained value. Hence you got your value.
   */
   /*
   ~x = -(x+1) [Working of complementation operator]
  */
   printf("%d",y);
   }
+
+Bitwise Left-shift (<<)
+> Its a binary operator:
+  L << R;
+  we perform operation on L and R tells us how many times operation is to perform.
+  In particular we have left shift the value of L by R.
+  First of all, We take the Binary equivalent of L.
+  Then we shift the bits of this value towards left by R times. On doing so, R number of right most bits will be poped out. And R number of '0' added on the left.
+  And this New Binary Value's Decimal equivalent becomes the value of the expression. 
+
+  >example program :
+  #include<stdio.h>
+  void main(){
+    int x = 5;
+    int y;
+    y = x << 1;
+    printf("%d",y);
+  }
+
+  #include<stdio.h>
+  void main(){
+    int x = 6;
+    int y;
+    y = x<<2;
+    printf("%d",y);
+  }
+
+  > Note: let say we have x,
+    then on x<<1 == 2x;
+  In general x << n == (2^n)x ;
+  > As in Decimal system, on adding a '0' on the left of the count. We get a value that is 10 times of the original value. In Binary system, on adding a '0' on the left of the count. We get a value that is @ times of the original value.
+  Hence, in general, on adding n '0' on the left of a decimal value we get a value that is 10^n times of the original value. And on adding n '0' on the left of a binary value we get a value that is 2^n times of the original value.
+
+  > Note: Never Left-shift the value more than the width of the type, for integer type do not exceed the limit of 15.
+          OR in other words, int x<<16 ; will give you a warning!
+
+Bitwise Right-shift (>>)
+>Its a Binary operator.
+ L >> R;
+ we perform operation on L and R tells us how many times operation is to perform.
+ In particular we have right shift the value of L by R.
+ First of all, We take the Binary equivalent of L.
+ Then we shift the bits of this value towards right by R times. On doing so, R number of left most bits will be poped out. And R number of '0' added on the left.
+ And this New Binary Value's Decimal equivalent becomes the value of the expression.
+
+ >example Program:
+ #include<stdio.h>
+ void main(){
+  int x = 5;
+  int y;
+  y = x >> 1;
+  printf("%d",y);
+ }
+
+ #include<stdio.h>
+ void main(){
+  int x = 10;
+  int y;
+  y = x >> 2;
+  printf("%d",y);
+ }
+ > Note: let say we have x,
+    then on x>>1 == x/2;
+  In general x >> n == { x/(2^n), when x is even OR x-1/(2^n), when x is odd;}
+
+  As per C standars the behaviour of negative numbers is undefined.
+
+  1) 2^k => there is only a single 1 OR all bits except One are 0.
+  2) Sum of n terms of a G.P is [1(2^n-1)]/[2^n-1]
