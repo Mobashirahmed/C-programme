@@ -19,7 +19,7 @@ int main(){
 
 void factorsList(int num){
     int f;
-    printf("List of factors of %d are as follews:\n",num);
+    printf("List of factors of %d are as follows:\n",num);
     if(num != 0 && num != 1){
         for(f=2; f < num; ++f){
             if(factorCheck(num, f)){

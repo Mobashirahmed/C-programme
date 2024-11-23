@@ -4,7 +4,7 @@ int main()
     int a=876;
     short b=5215;
     long int c=576543L;
-    int d=9578U;
+    unsigned int d=9578U;
     printf("integer data type %d\n",a);
     printf("short integer data type %d\n",b);
     printf("long integer data type %ld\n",c);
