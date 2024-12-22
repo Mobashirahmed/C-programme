@@ -30,4 +30,4 @@ Characteristics of C Language:
    • Sytax refers to the grammar of writting code in C language. It refers to the rules for the structure of C Program.
    Example: Syntax for Declaratin of a variable :
              data-type variable_name;
-           Every statement in C program terminates at a ssemi-colon.
+           Every statement in C program terminates at a semi-colon.

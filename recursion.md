@@ -11,19 +11,21 @@ EXAMPLE 1: Factorial using recursion:
 
 #include<stdio.h>
 #include<conio.h>
-int factorial(int a);
+int factorial(int n);
 
 void main(){
-    int res, x;
+    int res, n;
     printf("\n Enter the value: ");
     scanf("%d", &x);
-    res = factorial(x);
-    printf("The factorial of %d is %d", x, res);
+    res = factorial(n);
+    printf("The factorial of %d is %d", n, res);
 }
 
-int factorial(int x){
+int factorial(int n){
     int fact;
-    if(n==1)
+    if ( n==0 )
+        return(1);
+    else if(n==1)
         return(1);
     else
         fact = n*factorial(n-1);
@@ -50,9 +52,9 @@ int main(){
 
 int Fobonacci(int n){
     if(n == 0)
-        return o;
+        return (0);
     else if(n == 1)
-        return 1;
+        return (1);
     else
         return (Fibonacci(n-1)+Fibonacci(n-2));
 }
