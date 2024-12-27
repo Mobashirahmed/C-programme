@@ -16,6 +16,7 @@ int main(){
     *ptr = 101;
     printf("Address of val: %p\n", &val);
     printf("Value of val: %d\n\n", val);    // here we'd updated the value in val
+    printf("size of pointer ptr: %d bytes\n", sizeof(ptr));
      
     return 0;
 }
