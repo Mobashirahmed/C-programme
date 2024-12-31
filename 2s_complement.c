@@ -26,9 +26,10 @@ int main(){
             else{
                 a[j] = '1';
             }
-    printf("\n2's Complement = %s", a);
         }
     }
+    
+    printf("\n2's Complement = %s", a);
     
     return 0;
 }

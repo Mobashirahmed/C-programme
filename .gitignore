@@ -1,2 +1,14 @@
+# Ignore executable files
 *.exe
-.exe
+*.out
+*.o
+*.obj
+*.dll
+*.so
+*.dylib
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
