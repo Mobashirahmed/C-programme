@@ -8,6 +8,7 @@
 *.dylib
 
 # Ignore IDE specific files
+*.vscode
 .vscode/
 .idea/
 *.sublime-project
