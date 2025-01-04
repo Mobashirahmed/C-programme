@@ -14,7 +14,7 @@ int main()
     printf("\nsize of short integer data type is %d bytes",size_of_short);
     printf("\nsize of long integer data type is %d bytes",size_of_long_int);
     printf("\nsize of float data type is %d bytes",size_of_float);
-    printf("\nsize of integer data type is %d bytes",size_of_double);
+    printf("\nsize of double data type is %d bytes",size_of_double);
 
     return 0;
 
