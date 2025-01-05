@@ -1,1 +1,0 @@
-printf("\n2's Complement = %s", a);

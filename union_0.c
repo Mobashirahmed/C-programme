@@ -4,6 +4,7 @@ union my_union {
     char c;
     int i;
     float f;
+    double d;
 };
 
 int main(){
@@ -16,6 +17,9 @@ int main(){
     
     u.f = 3.14; // again here, the value of int member is overwritten by assigning a value to the float member in that respective memory location
     printf("%f\n", u.f);
+
+    u.d = 3.14159626; 
+    printf("%lf\n", u.d);
 
     printf("size of union u: %zu bytes", sizeof(u));
     return 0;
